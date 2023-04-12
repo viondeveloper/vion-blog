@@ -28,9 +28,9 @@ const Header: FC = () => {
             </div>
           </div>
           <div className={classes.itemRight}>
-            <div>Home</div>
+            <div><Link href={`/`} >Home</Link></div>
             <div>Blogs</div>
-            <div>About</div>
+            <div><Link href={`/DefaultPage`} >About</Link></div>
           </div>
         </div>
       </div>
