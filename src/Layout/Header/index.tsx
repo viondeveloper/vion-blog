@@ -88,7 +88,7 @@ const Header: FC = () => {
                 <div className={classes.menuRight}>
                   <div className={classes.wrapMenu}>
                     {listIconContact.map((it) => (
-                      <a
+                      <Link
                         href={it.url}
                         target="blank"
                         rel="noopener noreferrer"
@@ -111,7 +111,7 @@ const Header: FC = () => {
                             })}
                           />
                         </span>
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
