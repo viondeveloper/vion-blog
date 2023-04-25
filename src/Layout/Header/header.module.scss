@@ -1,7 +1,8 @@
 @import "../../styles/variables.module.scss";
 
 .siteHeader {
-  font-family: "Montserrat", sans-serif, Verdana, "Courier New", Courier, monospace;
+  font-family: "Montserrat", sans-serif, Verdana, "Courier New", Courier,
+    monospace;
   position: relative;
   z-index: 99;
 }
@@ -105,7 +106,6 @@
   position: relative;
 
   li {
-    line-height: 70px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -119,16 +119,25 @@
     vertical-align: baseline;
 
     a {
+      font-family: "Montserrat", sans-serif;
       color: $text_black;
       text-decoration: none;
       display: flex;
       align-items: center;
       height: 100%;
       padding: 0 1em;
-      transition: all .2s linear;
+      transition: all 0.2s linear;
+
+      &.selected {
+        color: $pink;
+      }
+
+      &.default {
+        color: $pink;
+      }
     }
 
-    a:visited {
+    a:hover {
       color: $pink;
     }
   }
@@ -169,7 +178,7 @@
       background: transparent;
 
       span {
-        transition: all .2s linear;
+        transition: all 0.2s linear;
         display: inline-flex;
         align-items: center;
         flex-wrap: wrap;
