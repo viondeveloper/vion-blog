@@ -1,0 +1,118 @@
+@import "../../styles/variables.module.scss";
+
+.siteFooter {
+  background-color: $black;
+  background-image: none;
+}
+
+.coverFooter {
+  display: grid;
+  padding: 2.1em 1em;
+  background-color: $black;
+  min-height: 80px;
+  width: 100%;
+  align-content: center;
+  background-image: none;
+}
+
+.wrapRowItem {
+  display: grid;
+  overflow-wrap: anywhere;
+  grid-column-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+}
+
+.coverItemLeft {
+  display: flex;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+
+  .itemLeft {
+    text-align: left;
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      border: 0;
+      color: $white;
+      font-size: 100%;
+      font-style: inherit;
+      font-weight: inherit;
+      margin: 0;
+      outline: 0;
+      padding: 0;
+      vertical-align: baseline;
+    }
+  }
+}
+
+.coverItemRight {
+  display: grid;
+  overflow-wrap: anywhere;
+}
+
+.navCover {
+  height: 100%;
+}
+
+.coverItem {
+  display: grid;
+  overflow-wrap: anywhere;
+}
+
+.ulWrapItem {
+  border: 0;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
+  list-style: none;
+  background: inherit;
+
+  li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+
+    a {
+      font-family: "Montserrat", sans-serif;
+      color: $white;
+      text-decoration: none;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .Home {
+      margin-right: 0.5em;
+    }
+
+    .Blog {
+      margin: 0 0.5em;
+    }
+
+    .Contact {
+        margin-left: 0.5em;
+    }
+  }
+}

@@ -3,7 +3,9 @@ import classes from "./home.module.scss";
 
 const HomePage: FC = () => {
   return <div className={classes.Container}>
-    <div>Home</div>
+    <div id="content" className={classes.siteContent}>
+      <div className={classes.Container}>Home</div>
+    </div>
   </div>;
 };
 

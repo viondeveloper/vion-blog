@@ -21,7 +21,7 @@ const listMenuHeader = [
     url: "/blog",
   },
   {
-    id: 1,
+    id: 3,
     name: "Contact",
     url: "/contact",
   },

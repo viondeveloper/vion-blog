@@ -1,7 +1,7 @@
 @import "../../styles/variables.module.scss";
 
 .siteHeader {
-  font-family: Verdana, sans-serif, "Courier New", Courier, monospace;
+  font-family: "Montserrat", sans-serif, Verdana, "Courier New", Courier, monospace;
   position: relative;
   z-index: 99;
 }
@@ -135,7 +135,7 @@
 }
 
 .menuRight {
-  padding: 0 10px;
+  padding: 0 0 0 10px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -187,8 +187,8 @@
         }
 
         .icLinkedin {
-          width: 19px;
-          height: 19px;
+          width: 19.68px;
+          height: 19.68px;
         }
       }
     }
