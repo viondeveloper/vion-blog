@@ -36,7 +36,7 @@
 
 .overWriteBg {
   background-color: #000000;
-  opacity: 0.3;
+  opacity: 0.5;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
   height: 100%;
   width: 100%;
@@ -141,27 +141,57 @@
         align-content: flex-start;
 
         .wrapItemLeft {
-          padding: 20px 0 0;
-          transition: background 0.3s, border 0.3s, border-radius 0.3s,
-            box-shadow 0.3s,
-            transform var(--e-transform-transition-duration, 0.4s);
+          width: 100%;
+          position: relative;
 
-          a {
-            text-decoration: none;
-            background-color: $white;
-            color: $text_black2;
-            border-style: solid;
-            fill: $text_black2;
-            border-color: $white;
-            font-size: 0.93333333333333rem;
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-            padding-top: 13px;
-            padding-right: 33px;
-            padding-bottom: 13px;
-            padding-left: 33px;
+          .contentItemLeft {
+            padding: 18px 0 0;
+            transition: background 0.3s, border 0.3s, border-radius 0.3s,
+              box-shadow 0.3s,
+              transform var(--e-transform-transition-duration, 0.4s);
+
+            a {
+              fill: $text_black2;
+              color: $text_black2;
+              background-color: $white;
+              border-style: solid;
+              border-color: $white;
+              font-size: 0.93333333333333rem;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;
+              border-bottom-right-radius: 0;
+              border-bottom-left-radius: 0;
+              padding-top: 10px;
+              padding-right: 33px;
+              padding-bottom: 13px;
+              padding-left: 33px;
+              line-height: 1em;
+              font-weight: 500;
+              text-decoration: none;
+              border-top-width: 1px;
+              border-right-width: 1px;
+              border-left-width: 1px;
+              border-bottom-width: 1px;
+              box-shadow: none;
+              display: inline-block;
+              text-align: center;
+              cursor: pointer;
+
+              &:hover {
+                transition: all 0.5s;
+                transition-duration: 0.5s;
+                transition-property: transform;
+                transform: scale(1.1);
+              }
+
+              .arrowRight {
+                width: 20px;
+                height: 20px;
+                margin-left: 5px;
+                padding-top: 5px;
+                vertical-align: bottom;
+              }
+            }
           }
         }
       }
@@ -172,6 +202,79 @@
       position: relative;
       min-height: 1px;
       display: flex;
+
+      .coverItemRight {
+        width: 100%;
+        position: relative;
+        display: flex;
+
+        .wrapItemRight {
+          padding: 10px;
+          display: flex;
+          position: relative;
+          width: 100%;
+          flex-wrap: wrap;
+          align-content: flex-start;
+
+          .contentItemRight {
+            width: 100%;
+            position: relative;
+
+            .eleItemRight {
+              padding: 20px 0 0;
+              transition: background 0.3s, border 0.3s, border-radius 0.3s,
+                box-shadow 0.3s,
+                transform var(--e-transform-transition-duration, 0.4s);
+
+              .linkItemRight {
+                fill: #fff;
+                color: #fff;
+                background-color: transparent;
+                border-style: solid;
+                border-width: 0;
+                font-size: 0.93333333333333rem;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+                padding-top: 13px;
+                padding-right: 33px;
+                padding-bottom: 13px;
+                padding-left: 33px;
+                font-weight: 500;
+                line-height: 1em;
+                border-color: $pink;
+                text-decoration: none;
+                box-shadow: none;
+                display: inline-block;
+                text-align: center;
+                cursor: pointer;
+
+                &:hover {
+                  transition: all 0.3s;
+                  transition-duration: 0.3s;
+                  transition-property: transform;
+                  transform: scale(1.1);
+                }
+
+                .wrapTextLink {
+                  text-decoration: inherit;
+                  display: flex;
+                  justify-content: center;
+
+                  .iconPlay {
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: top;
+                    margin-right: 5px;
+                    margin-top: -3px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

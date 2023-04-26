@@ -1,7 +1,11 @@
 import { FC } from "react";
 import classes from "./home.module.scss";
-import HomeBanner from "../../assets/img/PA2.png";
 import Link from "next/link";
+import Image from "next/image";
+
+import HomeBanner from "../../assets/img/PA3.png";
+import IcArrow from "../../assets/icon/ic_arrow_right.svg";
+import ICPlay from "../../assets/icon/play-circle.svg";
 
 const HomePage: FC = () => {
   return (
@@ -29,11 +33,45 @@ const HomePage: FC = () => {
                   <div className={classes.itemLeft}>
                     <div className={classes.coverItemLeft}>
                       <div className={classes.wrapItemLeft}>
-                        <Link href={'#'} ><span>Read More</span></Link>
+                        <div className={classes.contentItemLeft}>
+                          <div>
+                            <Link href={"#"}>
+                              <span>
+                                Read More
+                                <Image
+                                  src={IcArrow}
+                                  alt="icon-arrow-right"
+                                  className={classes.arrowRight}
+                                  priority
+                                />
+                              </span>
+                            </Link>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div className={classes.itemRight}>Watch Video</div>
+                  <div className={classes.itemRight}>
+                    <div className={classes.coverItemRight}>
+                      <div className={classes.wrapItemRight}>
+                        <div className={classes.contentItemRight}>
+                          <div className={classes.eleItemRight}>
+                            <div>
+                              <Link
+                                href={"#"}
+                                className={classes.linkItemRight}
+                              >
+                                <span className={classes.wrapTextLink}>
+                                  <Image src={ICPlay} alt="icon-play" className={classes.iconPlay} />
+                                  <span>Watch Video</span>
+                                </span>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
