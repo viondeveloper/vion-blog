@@ -1,0 +1,43 @@
+.Container {
+  max-width: 100%;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.primary {
+  padding: 0;
+  margin: 0;
+}
+
+#primary {
+  width: 100%;
+}
+
+.content {
+  word-wrap: break-word;
+  margin-bottom: 0;
+}
+
+.sectionBannerImg {
+  background-attachment: fixed;
+  background-color: #fcf5f2;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.setContent {
+    min-height: 90vh;
+    max-width: 1200px;
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
