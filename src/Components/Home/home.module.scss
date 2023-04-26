@@ -1,3 +1,5 @@
+@import "../../styles/variables.module.scss";
+
 .Container {
   max-width: 100%;
   padding: 0;
@@ -32,12 +34,144 @@
   height: 100%;
 }
 
+.overWriteBg {
+  background-color: #000000;
+  opacity: 0.3;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
 .setContent {
-    min-height: 90vh;
-    max-width: 1200px;
-    align-items: center;
+  min-height: 90vh;
+  max-width: 1200px;
+  align-items: center;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.rowContent {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.content {
+  align-content: center;
+  align-items: center;
+  padding: 0% 30% 0% 0%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+}
+
+.itemTop {
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+
+  .coverItemTop {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+      box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
+
+    .titleTop {
+      color: $white;
+      line-height: 1.3em;
+      font-size: 3.2rem;
+      font-weight: 500;
+      font-family: "Montserrat", sans-serif;
+      clear: both;
+      font-style: inherit;
+      vertical-align: baseline;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.itemSec {
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+
+  .coverItemSec {
+    padding: 5px 0 0;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+      box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
+  }
+
+  .titleSec {
+    color: $white;
+    line-height: 1.4em;
+    margin: 0;
+    font-size: 5.2rem;
+    font-family: "Libre Baskerville", serif !important;
+    font-weight: 400;
+    padding: 0;
+  }
+}
+
+.itemBottom {
+  width: 100%;
+  position: relative;
+
+  .wrapItem {
+    width: 100%;
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
+
+    .itemLeft {
+      width: 27.262%;
+      position: relative;
+      min-height: 1px;
+      display: flex;
+
+      .coverItemLeft {
+        padding: 10px;
+        display: flex;
+        position: relative;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+        .wrapItemLeft {
+          padding: 20px 0 0;
+          transition: background 0.3s, border 0.3s, border-radius 0.3s,
+            box-shadow 0.3s,
+            transform var(--e-transform-transition-duration, 0.4s);
+
+          a {
+            text-decoration: none;
+            background-color: $white;
+            color: $text_black2;
+            border-style: solid;
+            fill: $text_black2;
+            border-color: $white;
+            font-size: 0.93333333333333rem;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            padding-top: 13px;
+            padding-right: 33px;
+            padding-bottom: 13px;
+            padding-left: 33px;
+          }
+        }
+      }
+    }
+
+    .itemRight {
+      width: 72.738%;
+      position: relative;
+      min-height: 1px;
+      display: flex;
+    }
+  }
 }
