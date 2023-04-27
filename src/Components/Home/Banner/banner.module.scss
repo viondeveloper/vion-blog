@@ -1,0 +1,257 @@
+@import "../../../styles/variables.module.scss";
+
+.sectionBannerImg {
+  background-attachment: fixed;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overWriteBg {
+  background-color: #000000;
+  opacity: 0.5;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.setContent {
+  min-height: 90vh;
+  max-width: 1200px;
+  align-items: center;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.rowContent {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.content {
+  align-content: center;
+  align-items: center;
+  padding: 0% 30% 0% 0%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+}
+
+.itemTop {
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+
+  .coverItemTop {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+      box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
+
+    .titleTop {
+      color: $white;
+      line-height: 1.3em;
+      font-size: 3.2rem;
+      font-weight: 500;
+      font-family: "Montserrat", sans-serif;
+      clear: both;
+      font-style: inherit;
+      vertical-align: baseline;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.itemSec {
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+
+  .coverItemSec {
+    padding: 5px 0 0;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+      box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
+  }
+
+  .titleSec {
+    color: $white;
+    line-height: 1.4em;
+    margin: 0;
+    font-size: 5.2rem;
+    font-family: "Libre Baskerville", serif !important;
+    font-weight: 400;
+    padding: 0;
+  }
+}
+
+.itemBottom {
+  width: 100%;
+  position: relative;
+
+  .wrapItem {
+    width: 100%;
+    display: flex;
+
+    .itemLeft {
+      width: 27.262%;
+      position: relative;
+      min-height: 1px;
+      display: flex;
+
+      .coverItemLeft {
+        padding: 10px;
+        display: flex;
+        position: relative;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+        .wrapItemLeft {
+          width: 100%;
+          position: relative;
+
+          .contentItemLeft {
+            padding: 18px 0 0;
+            transition: background 0.3s, border 0.3s, border-radius 0.3s,
+              box-shadow 0.3s,
+              transform var(--e-transform-transition-duration, 0.4s);
+
+            a {
+              fill: $text_black2;
+              color: $text_black2;
+              background-color: $white;
+              border-style: solid;
+              border-color: $white;
+              font-size: 0.93333333333333rem;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;
+              border-bottom-right-radius: 0;
+              border-bottom-left-radius: 0;
+              padding-top: 10px;
+              padding-right: 33px;
+              padding-bottom: 13px;
+              padding-left: 33px;
+              line-height: 1em;
+              font-weight: 500;
+              text-decoration: none;
+              border-top-width: 1px;
+              border-right-width: 1px;
+              border-left-width: 1px;
+              border-bottom-width: 1px;
+              box-shadow: none;
+              display: inline-block;
+              text-align: center;
+              cursor: pointer;
+
+              &:hover {
+                transition: all 0.5s;
+                transition-duration: 0.5s;
+                transition-property: transform;
+                transform: scale(1.1);
+              }
+
+              .arrowRight {
+                width: 20px;
+                height: 20px;
+                margin-left: 5px;
+                padding-top: 5px;
+                vertical-align: bottom;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .itemRight {
+      width: 72.738%;
+      position: relative;
+      min-height: 1px;
+      display: flex;
+
+      .coverItemRight {
+        width: 100%;
+        position: relative;
+        display: flex;
+
+        .wrapItemRight {
+          padding: 10px;
+          display: flex;
+          position: relative;
+          width: 100%;
+          flex-wrap: wrap;
+          align-content: flex-start;
+
+          .contentItemRight {
+            width: 100%;
+            position: relative;
+
+            .eleItemRight {
+              padding: 20px 0 0;
+              transition: background 0.3s, border 0.3s, border-radius 0.3s,
+                box-shadow 0.3s,
+                transform var(--e-transform-transition-duration, 0.4s);
+
+              .linkItemRight {
+                fill: #fff;
+                color: #fff;
+                background-color: transparent;
+                border-style: solid;
+                border-width: 0;
+                font-size: 0.93333333333333rem;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+                padding-top: 13px;
+                padding-right: 33px;
+                padding-bottom: 13px;
+                padding-left: 33px;
+                font-weight: 500;
+                line-height: 1em;
+                border-color: $pink;
+                text-decoration: none;
+                box-shadow: none;
+                display: inline-block;
+                text-align: center;
+                cursor: pointer;
+
+                &:hover {
+                  transition: all 0.3s;
+                  transition-duration: 0.3s;
+                  transition-property: transform;
+                  transform: scale(1.1);
+                }
+
+                .wrapTextLink {
+                  text-decoration: inherit;
+                  display: flex;
+                  justify-content: center;
+
+                  .iconPlay {
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: top;
+                    margin-right: 5px;
+                    margin-top: -3px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

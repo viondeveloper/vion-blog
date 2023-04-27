@@ -1,0 +1,77 @@
+@import "../../../styles/variables.module.scss";
+
+.Section1 {
+  padding: 85px 0 135px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.cover {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrapContent {
+  width: 100%;
+  display: flex;
+}
+
+.wrapItem {
+  padding: 0% 30% 0% 0%;
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.wrapItemTop {
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+
+  .coverItemTop {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+      box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
+
+    h5 {
+      line-height: 1.2em;
+      margin: 0;
+      color: $black;
+      font-size: 1.0666666666667rem;
+      font-family: "Libre Baskerville", serif;
+      font-weight: 400;
+      padding: 0;
+      clear: both;
+      vertical-align: baseline;
+      border: 0;
+      text-align: left;
+    }
+  }
+}
+
+.wrapItemBot {
+  width: 100%;
+  position: relative;
+
+  .coverItemBot {
+    padding: 5px 0 0;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+      box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
+
+    h2 {
+      line-height: 1.3em;
+      margin: 0;
+      color: $black;
+      font-size: 3.2rem;
+      font-weight: 500;
+      font-family: "Montserrat", sans-serif;
+      clear: both;
+      vertical-align: baseline;
+      border: 0;
+      padding: 0;
+    }
+  }
+}

@@ -1,7 +1,8 @@
-import { FC } from "react";
+import React from "react";
 import classes from "./blog-home-page.module.scss";
+import { NextPage } from "next";
 
-const BlogHomePage: FC = () => {
+const BlogHomePage: NextPage = () => {
   return <div className={classes.Container}>
     <div>Blog</div>
   </div>;
