@@ -3,7 +3,7 @@ import classes from "./section2.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-import ModalImage from "../../../assets/img/PA4.png";
+import ModalImage from "../../../assets/img/model_home.png";
 import ArrowRight from "../../../assets/icon/ic_arrow_right_white.svg";
 
 const Section2: FC = () => {
@@ -21,6 +21,7 @@ const Section2: FC = () => {
                         src={ModalImage}
                         alt="image-beautiful-girl"
                         className={classes.ModalImage}
+                        priority
                       />
                     </div>
                   </div>
@@ -58,7 +59,6 @@ const Section2: FC = () => {
                             <Image
                               src={ArrowRight}
                               alt="arrow-right"
-                              priority
                               className={classes.arrowRight}
                             />
                           </span>

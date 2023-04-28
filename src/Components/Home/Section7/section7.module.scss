@@ -1,0 +1,72 @@
+@import "../../../styles/variables.module.scss";
+
+.Container {
+  padding: 60px 0 40px;
+  position: relative;
+}
+
+.wrapSection7 {
+  max-width: 1700px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.coverSection7 {
+  width: 100%;
+  display: flex;
+}
+
+.item {
+  width: 16.666%;
+  position: relative;
+  min-height: 1px;
+  display: flex;
+
+  .wrapItem {
+    width: 100%;
+    position: relative;
+    display: flex;
+
+    .coverItem {
+      padding: 10px;
+      display: flex;
+      position: relative;
+      width: 100%;
+      flex-wrap: wrap;
+      align-content: flex-start;
+
+      .siteItem {
+        width: 100%;
+        position: relative;
+
+        .contentItem {
+          transition: background 0.3s, border 0.3s, border-radius 0.3s,
+            box-shadow 0.3s,
+            transform var(--e-transform-transition-duration, 0.4s);
+
+          .coverContent {
+            word-wrap: break-word;
+            text-align: center;
+
+            img {
+              opacity: 1;
+              vertical-align: middle;
+              display: inline-block;
+              height: auto;
+              max-width: 100%;
+              border: none;
+              border-radius: 0;
+              box-shadow: none;
+              width: 136px;
+              aspect-ratio: auto 136 / 40;
+              overflow-clip-margin: content-box;
+              overflow: clip;
+            }
+          }
+        }
+      }
+    }
+  }
+}

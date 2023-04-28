@@ -3,27 +3,27 @@ import classes from "./section4.module.scss";
 import Image from "next/image";
 import cx from "classnames";
 
-import PA1 from "../../../assets/img/PA_Section4_1.png";
-import PA2 from "../../../assets/img/PA_Section4_2.png";
-import PA from "../../../assets/img/PA.png";
-import PA6 from "../../../assets/img/PA_Section4_6.png";
+import modal1 from "../../../assets/img/model1_section4.png";
+import modal2 from "../../../assets/img/model2_section4.png";
+import modal3 from "../../../assets/img/model3_section4.png";
+import modal4 from "../../../assets/img/model4_section4.png";
 
 const listImage = [
   {
     id: "img1",
-    src: PA1,
+    src: modal1,
   },
   {
     id: "img2",
-    src: PA,
+    src: modal2,
   },
   {
     id: "img3",
-    src: PA6,
+    src: modal3,
   },
   {
     id: "img4",
-    src: PA2,
+    src: modal4,
   },
 ];
 
@@ -48,6 +48,7 @@ const Section4: FC = () => {
                             [classes.image3]: it.id === "img3",
                             [classes.image4]: it.id === "img4",
                           })}
+                          priority
                         />
                       </div>
                     </div>

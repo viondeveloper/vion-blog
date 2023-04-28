@@ -3,7 +3,7 @@ import classes from "./banner.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-import HomeBanner from "../../../assets/img/PA3.png";
+import HomeBanner from "../../../assets/img/homeBanner.png";
 import IcArrow from "../../../assets/icon/ic_arrow_right.svg";
 import ICPlay from "../../../assets/icon/play-circle.svg";
 
@@ -41,7 +41,6 @@ const Banner: FC = () => {
                                 src={IcArrow}
                                 alt="icon-arrow-right"
                                 className={classes.arrowRight}
-                                priority
                               />
                             </span>
                           </Link>
@@ -62,7 +61,6 @@ const Banner: FC = () => {
                                   src={ICPlay}
                                   alt="icon-play"
                                   className={classes.iconPlay}
-                                  priority
                                 />
                                 <span>Watch Video</span>
                               </span>

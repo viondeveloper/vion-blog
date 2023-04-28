@@ -123,7 +123,6 @@ const Header: FC = () => {
                           <Image
                             src={it.src}
                             alt={it.alt}
-                            priority
                             className={cx({
                               [classes.icFb]: it.id === "icFb",
                               [classes.icIns]: it.id === "icIns",

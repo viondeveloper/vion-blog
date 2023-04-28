@@ -1,0 +1,213 @@
+@import "../../../styles/variables.module.scss";
+
+.Container {
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 100px 0 108px;
+  position: relative;
+}
+
+.BottomSection {
+  transform: rotate(180deg);
+  bottom: -1px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+
+  svg {
+    width: calc(110% + 1.3px);
+    height: 120px;
+    z-index: -1;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    path {
+      fill: $white;
+      transform-origin: center;
+      transform: rotateY(0deg);
+    }
+  }
+}
+
+.TopSection {
+  max-width: 850px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.wrapTopSection {
+  width: 100%;
+  display: flex;
+}
+
+.coverTopSection {
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  display: flex;
+}
+
+.siteItem {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.wrapItem {
+  padding: 10px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.item1 {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+
+  .wrapItem1 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+      box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
+    text-align: center;
+
+    h5 {
+      line-height: 1.2em;
+      margin: 0;
+      color: $black;
+      font-size: 1.3rem;
+      font-family: "Libre Baskerville", serif;
+      font-weight: 400;
+      padding: 0;
+      clear: both;
+    }
+  }
+}
+
+.item2 {
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+
+  .wrapItem2 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+      box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
+
+    .coverItem2 {
+      display: flex;
+      text-align: center;
+      padding-top: 6px;
+      padding-bottom: 6px;
+
+      span {
+        width: 12%;
+        margin: 0 auto;
+        border-top: 3px solid $line_black;
+        display: flex;
+        direction: ltr;
+      }
+    }
+  }
+}
+
+.item3 {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+
+  .wrapItem3 {
+    padding: 5px 0 0;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+      box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
+    word-wrap: break-word;
+    text-align: center;
+
+    h2 {
+      line-height: 1.3em;
+      margin: 0;
+      color: $black;
+      font-size: 3.5rem;
+      font-weight: 500;
+      font-family: "Montserrat", sans-serif;
+      padding: 0;
+      clear: both;
+      text-align: center;
+    }
+  }
+}
+
+.item4 {
+  width: 100%;
+  position: relative;
+  word-wrap: break-word;
+
+  .wrapItem4 {
+    padding: 30px 0 0;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+      box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
+
+    .coverItem4 {
+      text-align: center;
+      overflow: hidden;
+
+      .contentTop {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+      }
+
+      .contentBot {
+        width: 100%;
+        line-height: 1;
+
+        .siteContent {
+          display: inline-block;
+          line-height: 1;
+
+          .contentItemLeft {
+            padding-right: 15px;
+            display: table-cell;
+            vertical-align: middle;
+
+            .avatarMini {
+              width: 91px;
+              height: 91px;
+              border-radius: 50%;
+              object-fit: cover;
+              max-width: none;
+              border: none;
+              box-shadow: none;
+              vertical-align: middle;
+              aspect-ratio: auto 160 / 160;
+            }
+          }
+
+          .contentItemRight {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: left;
+
+            .textContent {
+              line-height: 1.5;
+              display: block;
+              text-align: left;
+              font-family: "Montserrat", sans-serif;
+              font-weight: 400;
+              font-size: 1rem;
+              color: $line_black;
+              font-style: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
