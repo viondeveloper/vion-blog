@@ -54,7 +54,7 @@ const Section8: FC = () => {
         <div className={classes.coverSection8}>
           {listItem.map((it) => (
             <div className={classes.item} key={it.id}>
-              {/* {it.id === "item1" ? <div>item1</div> : <div>item 2, 3</div>} */}
+              {it.id === "item1" ? <div>item1</div> : <div>item 2, 3</div>}
             </div>
           ))}
         </div>
